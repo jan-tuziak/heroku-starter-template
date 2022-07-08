@@ -5,7 +5,7 @@ def _css_style() -> str:
     <style>
     body  {
         text-align: center;
-        font-family: Consolas;
+        font-family: Arial;
     }
     .button {
         background-color: #4CAF50; /* Green */
