@@ -7,11 +7,13 @@ import uvicorn
 from fastapi import FastAPI
 from fastapi.responses import HTMLResponse
 
+import ui
+
 app = FastAPI()
 
 @app.get("/", response_class=HTMLResponse)
 async def root():
-    return "hello world!"
+    return ui.root()
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
